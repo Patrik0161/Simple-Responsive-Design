@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>Form Example</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <meta name="author" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+   </head>
+   <body>
+
+     <div class="header">
+       <h1>Form Example</h1>
+      </div>
+
+
+      <div class="main">
+        <h2>Apply</h2>
+        <h5>Fill in the application form below:</h5>
+        <form actrion = "#" name = "myForm" onsubmit = "return(validate());">
+          <label for="Name">Name:</label>
+          <input type = "text" name = "Name">
+          <br><br>
+
+          <label for="EMail">EMail:</label>
+          <input type = "text" name = "EMail">
+          <br><br>
+
+          <label for="PostCode">PostCode:</label>
+          <input type = "text" name = "PostCode"
+                 pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Zz-z]? [0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}">
+          <br><br>
+
+          <label fpr="Choice">Choice:</label>
+          <select name = "Choice">
+            <option value = "-1" selected>[choose option]</option>
+            <option value = "1">One</option>
+            <option value = "2">Two</option>
+            <option value = "3">Three</option>
+          </select>
+          <br><br>
+
+           <input type = "submit" value = "Submit">
+
+          </form>
+  </div>
+
+
+
+    <script src="validation.js"></script>
+  </body>
+  </html>
